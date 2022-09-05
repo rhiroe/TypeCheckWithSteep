@@ -1,0 +1,11 @@
+class Person
+  @firstname: String
+  @lastname: String
+  @birthday: Date
+  def initialize: (firstname: String, lastname: String, birthday: Date) -> untyped
+  def firstname: () -> String
+  def lastname: () -> String
+  def birthday: () -> Date
+  def fullname: () -> String
+  def age: () -> Integer
+end
