@@ -3,7 +3,7 @@ class Person
   attr_reader lastname: String
   attr_reader birthday: Date
   @token: String
-  def initialize: (firstname: String, lastname: String, birthday: Date) -> untyped
+  def initialize: (firstname: String, lastname: String, birthday: Date) -> void
   def fullname: () -> String
   def age: () -> Integer
 end
