@@ -1,10 +1,12 @@
 require 'date'
+require 'securerandom'
 
 class Person
   def initialize(firstname:, lastname:, birthday:)
     @firstname = firstname
     @lastname = lastname
     @birthday = birthday
+    @token = SecureRandom.alphanumeric(10)
   end
 
   attr_reader :firstname, :lastname, :birthday

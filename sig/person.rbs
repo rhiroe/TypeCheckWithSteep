@@ -1,11 +1,9 @@
 class Person
-  @firstname: String
-  @lastname: String
-  @birthday: Date
+  attr_reader firstname: String
+  attr_reader lastname: String
+  attr_reader birthday: Date
+  @token: String
   def initialize: (firstname: String, lastname: String, birthday: Date) -> untyped
-  def firstname: () -> String
-  def lastname: () -> String
-  def birthday: () -> Date
   def fullname: () -> String
   def age: () -> Integer
 end

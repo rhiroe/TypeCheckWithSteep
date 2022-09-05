@@ -1,5 +1,5 @@
 target :sample do
   signature 'sig'
   check 'src'
-  library 'date'
+  library 'date', 'securerandom'
 end
